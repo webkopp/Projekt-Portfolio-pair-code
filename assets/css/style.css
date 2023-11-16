@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Didact Gothic';
+    src: url(../fonts/DidactGothic-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Fjalla One';
+    src: url(../fonts/FjallaOne-Regular.ttf);
+}
+
+Farben {
+    color: #9e9e9e, #fff, #000, #333, #666
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #000;
+    font-family: 'Didact Gothic';
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    font-size: 1.25em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    text-align: center;
+    gap: 3em;
+}
+
+header p {
+    font-size: 0.8em;
+}
+
+header h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+header h2 {
+    font-size: 6em;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+/* header */
+main {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+[class^="section-"] {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+}
+
+[class^="section-"] p {
+    color: #9E9E9E;
+    text-align: left
+}
+
+.section-eins p:first-of-type::before, .section-zwei p:first-of-type::before, .section-drei p:first-of-type::before, .section-vier p:first-of-type::before {
+    content: " ";
+    display: flex;
+    height: 1px;
+    position: relative;
+    top: 55%;
+    right: 20%;
+    background: #9E9E9E;
+    max-width: 15px;
+};
+
+[class^="section-"] h2 {
+    font-size: 6em;
+    font-weight: 200;
+    text-align: left;
+}
+
+[class^="section-"] h3 {
+    font-family: 'Fjalla One';
+    font-size: 10em;
+    font-weight: 200;
+    text-align: left;
+    color: rgba(158, 158, 158, 0.5);
+}
+
+[class^="section-"] .section-no {
+    align-content: flex-end;
+    justify-content: flex-end;
+    padding-left: 10em;
+    padding-bottom: 7.5em;
+}
+
+[class^="section-"] .desc {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.section-zwei,
+.section-vier {
+    color: #000;
+}
+
+.section-eins {
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(../img/portfolio2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-zwei {
+    background: url(../img/portfolio3.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-zwei h3{
+    color: #666;
+}
+
+.section-drei {
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(../img/portfolio4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-vier {
+    background: url(../img/portfolio5.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-vier h3{
+    color: #666;
+}
+
+
+.button {
+    background: transparent;
+    padding: 0.7em 1em;
+    text-align: center;
+    border: 3px solid rgb(255, 255, 255, 0.5);
+    border-radius: 0px;
+    color: white;
+    line-height: 25px;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.dark {
+    color: black;
+    border: 3px solid black;
+}
+
+.section-eins .button:hover, .section-drei .button:hover{
+    background: white;
+    color: black;
+}
+
+.section-zwei .button:hover, .section-vier .button:hover{
+    color:white;
+    background: black;
+}
+
+.section-eins .button:hover + .section-no h3, .section-drei .button:hover + .section-no h3{
+    color: white;
+}
+
+.section-zwei .button:hover + .section-no h3, .section-vier .button:hover + .section-no h3{
+    color: black;
+}
+
+.section-fuenf {
+    background-color: #000;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-fuenf .desc{
+    margin-left: auto;
+    padding-left: 45%;
+    padding-right: 3em;
+    padding-top: 5em;
+}
+
+.section-fuenf .desc a{
+    text-align: left;
+    color: white;
+    font-size: 2em;
+    text-decoration:underline;
+    font-weight: 100;
+    font-family: 'Work Sans';
+}
+
+.section-fuenf h2 {
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Work Sans';
+    font-weight: 350;
+    letter-spacing: -0.5rem;
+}
+
+.section-fuenf p {
+    color: #666;
+    font-weight: 300;
+    font-family: 'Work Sans';
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem 0;
+    font-size: 5rem;
+}
+
+footer a {
+    color: #000;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.heart {
+    background-color: crimson;
+    display: inline-block;
+    scale: 0.25;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    position: relative;
+    animation: heartbeat 1.25s infinite;
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: "";
+    background-color: crimson;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    animation: pulsecolor 1.25s infinite;
+  }
+  
+  .heart::before {
+    top: -50px;
+    left: 0;
+  }
+  
+  .heart::after {
+    top: 0;
+    left: 50px;
+  }
+  
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1)
+                 rotate(-45deg);
+      }
+    10% {
+      transform: scale(1.25)
+                 rotate(-45deg);
+      background-color: #EF395E;
+      }
+    100% {
+        transform: scale(1)
+                   rotate(-45deg);
+    }
+  }
+  
+  @keyframes pulsecolor {
+    10% {
+    background-color: #EF395E;
+    }
+  }
